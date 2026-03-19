@@ -42,21 +42,24 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: var(--font-weight-bold);
 }
 
-a[href] {
-	color: var(--text-color);
-	text-decoration: none;
+a {
+        color: var(--text-color);
 }
 
-a[href]:visited {
-	font-style: italic;
+a:link {
+        text-decoration: none;
 }
 
-a[href]:hover {
-	text-decoration: underline;
+a:visited {
+        font-style: italic;
 }
 
-a[href]:active {
-	background-color: var(--color-light-grey);
+a:hover {
+        text-decoration: underline;
+}
+
+a:active {
+        background-color: var(--color-light-grey);
 }
 
 .visually-hidden {

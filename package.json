@@ -2,7 +2,7 @@
   "name": "holbertonschool-web_front_end",
   "private": true,
   "scripts": {
-    "dev": "vite html_advanced --host 0.0.0.0 --port 5500 --strictPort"
+    "dev": "sh -c 'TARGET=\"$INIT_CWD\"; [ -z \"$TARGET\" ] && TARGET=\"$PWD\"; [ ! -f \"$TARGET/index.html\" ] && TARGET=\"html_advanced\"; exec vite \"$TARGET\" --host 0.0.0.0 --port 5500 --strictPort'"
   },
   "devDependencies": {
     "vite": "^7.1.4"
